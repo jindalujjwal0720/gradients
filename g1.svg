@@ -1,0 +1,65 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio:1.5;">
+      <style>
+      .bg-gradient-hero-1 {
+        --color-bg: #000000;
+        --color-001: #05fbeb;
+        --color-002: #05a2f9;
+        --color-003: #015ded;
+        --color-004: #012b6a;
+        --color-005: #010081;
+        --color-006: #010f53;
+      
+        --gradient-001: linear-gradient(
+          185deg,
+          var(--color-001) 47%,
+          var(--color-003) 65%,
+          var(--color-bg) 85%
+        );
+        --gradient-002: linear-gradient(
+          to bottom,
+          var(--color-002) 20%,
+          var(--color-004) 50%,
+          var(--color-bg) 80%
+        );
+        --gradient-003: linear-gradient(
+          to bottom,
+          var(--color-003) 0,
+          var(--color-005) 40%,
+          var(--color-bg) 65%
+        );
+        --gradient-004: linear-gradient(
+          185deg,
+          var(--color-005) 30%,
+          var(--color-006) 40%,
+          var(--color-bg) 55%
+        );
+      
+        width: 100cqw;
+        /* Make the height equal to the hypotenuse of the viewport */
+        height: hypot(100cqw, 100%);
+      
+        flex-shrink: 0;
+      
+        background-color: var(--color-bg);
+        background-image: var(--gradient-001), var(--gradient-002),
+          var(--gradient-003), var(--gradient-004);
+      
+        /* Scale the height of the gradient bars */
+        --h-scale: 40%;
+        background-size: 33% var(--h-scale), 15% var(--h-scale), 4% var(--h-scale),
+          47% var(--h-scale);
+      
+        /* There's a mathematical way to calculate these, but I hard-coded them here for simplicty */
+        background-position-x: 0%, 37%, 48%, 90%;
+        background-position-y: top;
+        background-repeat: no-repeat;
+        transform-origin: top center;
+        transform: scale(200%) translateX(30cqw) rotate(45deg);
+      }
+      </style>
+      <div class="bg-gradient-hero-1" />
+    </div>
+  </foreignObject>
+</svg>
